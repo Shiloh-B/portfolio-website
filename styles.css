@@ -1,0 +1,224 @@
+/* reset */
+
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* shapes */
+.dot {
+  height: 7px;
+  width: 7px;
+  background-color: black;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.divider {
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-top: 100px;
+    margin-bottom: 75px;
+}
+
+/* header */
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    flex-grow: 1;
+    border-bottom: 5px solid darkgrey;
+}
+
+.leftheader {
+    display: flex;
+    justify-content: space-around;
+    width: 750px;
+}
+
+.rightheader {
+    display: flex;
+    justify-content: space-around;
+    width: 750px;
+}
+
+.header a {
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.header a:active {
+    position: relative;
+    top: 1px;
+    left: 1px;
+}
+
+.nameplate h1 {
+    margin-bottom: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+}
+
+.nameplate p {
+    margin-top: 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+}
+
+/* mid */
+.mid {
+    color: white;
+    background-image: url("https://www.creativefabrica.com/wp-content/uploads/2020/04/09/Night-city-background-with-many-building-Graphics-3832769-1.jpg");
+    background-size: cover;
+    background-position: 25% 100%;
+    height: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 75px;
+    border-bottom: 5px solid darkgrey;
+}
+
+.mid h3 {
+    font-weight: lighter;
+}
+
+.clickbelow {
+    padding-top: 50px;
+}
+
+.clickbelow h2 {
+    font-weight: lighter;
+}
+
+.midportref {
+  background-color: transparent;
+  font-size: 25px;
+  color: white;
+  border: 1px solid white;
+  border-radius: 15px;
+  padding: 10px 40px;
+  outline: none;
+  text-decoration: none;
+}
+
+.midportref:active {
+    position: relative;
+    top: 1px;
+    left: 1px;
+}
+
+/* portfolio */
+
+.section-header {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.portfolio {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    height: 200px;
+    flex-grow: 1;
+    margin: 0 auto;
+}
+
+.project {
+    width: 500px;
+}
+
+.project h2 {
+    font-weight: bold;
+}
+
+.projectbuttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.projectbuttons a {
+    position: relative;
+    background-color: transparent;
+    font-size: 15px;
+    color: black;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 10px 40px;
+    outline: none;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* about me */
+
+.aboutme {
+    text-align: center;
+}
+
+.aboutme h1 {
+    padding-top: 30px;
+}
+
+.aboutme p {
+    line-height: 23px;
+}
+
+/* contact me */
+.contact-me {
+    text-align: center;
+}
+
+.email {
+    width: 1000px;
+    height: 300px;
+}
+
+.submit-email {
+  background-color: transparent;
+  font-size: 15px;
+  color: black;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 5px 25px;
+  outline: none;
+  text-decoration: none;
+}
+
+.submit-email:active {
+    position: relative;
+    top: 1px;
+    left: 1px;
+}
+
+
+
+/* footer */
+footer {
+    color: grey;
+    font-weight: lighter;
+    text-align: right;
+    background-color: black;
+    margin-top: 100px;
+    border-top: 5px solid darkgrey;
+}
+
+footer p {
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    line-height: 20px;
+    margin: 0 auto;
+}
