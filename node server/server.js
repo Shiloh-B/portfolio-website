@@ -3,12 +3,10 @@ const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 
-const hostname = '127.0.0.1';
 const port = 1323;
 const app = express();
 
-app.use(cors);
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(cors());
 app.use(bodyParser.json());
 
 var transporter = nodemailer.createTransport({
@@ -19,13 +17,15 @@ var transporter = nodemailer.createTransport({
     }
 });
 
+
+// routes
 app.post('/sendmail', function(req, res) {
     console.log(req.body);
     var mailOptions = {
-        from: 'contactpageshilohportfolio@gamil.com',
+        from: 'contactpageshilohportfolio@gmail.com',
         to: 'shilohballards@gmail.com',
-        subject: 'Contact Page Submission',
-        text: req.body
+        subject: req.body.title,
+        text: req.body.body
     };
 
     transporter.sendMail(mailOptions, function(error, info) {
@@ -45,5 +45,5 @@ app.post('/test', function(req, res) {
 
 // starting server
 app.listen(port, () => {
-    console.log(`Server listening at port: ${port}`)
+    console.log(`Server listening at port: ${port}`);
 });
